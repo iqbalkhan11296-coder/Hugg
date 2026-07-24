@@ -25,3 +25,6 @@ document.getElementById("data").innerHTML=table;
 }
 
 loadData();
+
+// Refresh every 3 seconds
+setInterval(loadData, 3000);
