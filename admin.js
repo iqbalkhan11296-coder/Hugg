@@ -24,7 +24,9 @@ document.getElementById("data").innerHTML=table;
 
 }
 
-loadData();
+async function refreshData() {
+  await loadData();
+}
 
-// Refresh every 3 seconds
-setInterval(loadData, 3000);
+refreshData();
+setInterval(refreshData, 3000);
